@@ -6,6 +6,7 @@ This is a command line application to match applicants with qualifying loans.
 Example:
     $ python app.py
 """
+import csv
 import sys
 import fire
 import questionary
@@ -102,6 +103,27 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     return bank_data_filtered
 
 
+
+def save_csv(csvpath, qualifying_loans):
+
+    """ Reads the CSV file from path provided.
+    Args:
+        csvpath (Path): The csv file path.
+        """
+
+    # Set the output header
+    header = ["Lender","Max Loan Amount","Max LTV","Max DTI","Min Credit Score","Interest Rate"]
+
+    with open(csvpath, "w", newline="") as csvfile:
+
+    # Create a 'csvwriter' using the 'csv' Library.
+        csvwriter = csv.writer(csvfile, delimiter=",")
+
+    # Use the csv library and `csv.writer` to write the header row
+        csvwriter.writerow(header)
+        csvwriter.writerows(qualifying_loans)
+      
+
 def save_qualifying_loans(qualifying_loans):
     """Saves the qualifying loans to a CSV file.
 
@@ -110,7 +132,17 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
-    save_csv(,qualifying_loans)
+    csvpath = Path("qualifying_loans.csv")
+    save_csv(csvpath,qualifying_loans)
+
+    """Prompts dialog to ask the user's about to save their qualifying loans.
+
+    Returns:
+        Returns the user's save qualifying loans.
+    """
+   # save_qualifying_loans = questionary.text("Would you like to save your qualifying loans?".confirm.ask())
+
+
 
 def run():
     """The main function for running the script."""
