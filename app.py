@@ -6,8 +6,10 @@ This is a command line application to match applicants with qualifying loans.
 Example:
     $ python app.py
 """
+from ast import Or
 import csv
 import sys
+from tkinter import Y
 import fire
 import questionary
 from pathlib import Path
@@ -103,13 +105,12 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     return bank_data_filtered
 
 
-
 def save_csv(csvpath, qualifying_loans):
 
-    """ Reads the CSV file from path provided.
+    """ Save the CSV file from path provided.
     Args:
         csvpath (Path): The csv file path.
-        """
+    """
 
     # Set the output header
     header = ["Lender","Max Loan Amount","Max LTV","Max DTI","Min Credit Score","Interest Rate"]
@@ -120,6 +121,7 @@ def save_csv(csvpath, qualifying_loans):
         csvwriter = csv.writer(csvfile, delimiter=",")
 
     # Use the csv library and `csv.writer` to write the header row
+    # Use the csv library and 'csv.writer' to write qualifiying loans
         csvwriter.writerow(header)
         csvwriter.writerows(qualifying_loans)
       
@@ -132,16 +134,32 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
-    csvpath = Path("qualifying_loans.csv")
-    save_csv(csvpath,qualifying_loans)
 
-    """Prompts dialog to ask the user's about to save their qualifying loans.
+    """Prompts dialog to ask the user's about to save their qualifying loans."""
+    
+    answer = questionary.confirm("Would you like to save your qualifying loans?").ask()
 
-    Returns:
-        Returns the user's save qualifying loans.
-    """
-   # save_qualifying_loans = questionary.text("Would you like to save your qualifying loans?".confirm.ask())
+    """Prompts dialog to ask the user's file name."""
+   
+    """find this file is include .csv then don't save/print .csv in file name,
 
+    otherwise save/print .csv in file name."""
+
+    if answer:
+        file_name = questionary.text("What would you like to name your file?").ask()
+        if file_name.find(".csv") != -1:
+            csvpath = Path(file_name)
+            message = file_name + " file is saved."
+        else:
+            csvpath = Path(file_name+".csv")
+            message = file_name + ".csv file is saved."
+
+        save_csv(csvpath,qualifying_loans)
+        
+        print(message)
+
+    else: 
+        print("File was not saved. Thank you!")
 
 
 def run():
