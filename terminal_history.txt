@@ -1,0 +1,84 @@
+    1  pwd
+    2  cd C:\Users\khain\Desktop\FinTech-Workspace\Python_Project\Module_2\Challenge 2\loan_qualifier_app
+    3  cd C:\Users\khain\Desktop\FinTech-Workspace\Python_Project\Module_2\
+    4  cd \Desktop\FinTech-Workspace\Python_Project\Module_2\Challenge 2\loan_qualifier_app
+    5  cd .\Desktop\FinTech-Workspace\Python_Project\Module_2\
+    6  pwd
+    7  cd Desktop
+    8  cd FinTech-Workspace
+    9  cd Python_Project/Module_2
+   10  ls -al
+   11  cd Challenge\ 2/
+   12  ls -al
+   13  cd loan_qualifier_app/
+   14  python app.py
+   15  python app.py
+   16  python app.py
+   17  git status
+   18  git commit -m "updated save csv function"
+   19  git push
+   20  python app.py
+   21  python app.py
+   22  python app.py
+   23  python app.py
+   24  python app.py
+   25  python app.py
+   26  python app.py
+   27  python app.py
+   28  pwd
+   29  git status
+   30  git add
+   31  git add app.py loan_qualifier_app.png Zillow_loan.csv
+   32  git commit -m "updated for the save qualifying loans."
+   33  git push
+   34  history 50 > terminal_history.txt  
+   35  pip install questionary
+   36  cd
+   37  cd loan_qualifier_app
+   38  cd ./loan_qualifier_app
+   39  cd .\loan_qualifier_app
+   40  pwd
+   41  cd Desktop
+   42  cd FinTech-Workspace
+   43  cd Python_Project/Module_2
+   44  cd Challenge\ 2/
+   45  cd loan_qualifier_app/
+   46  python app.py
+   47  python app.py
+   48  pwd
+   49  git status
+   50  git add modified: README.md modified: app.py khaing_loan.csv loan_qualifier_app.png Qualifying_loans_non_saved_file.png Qualifying_loans_saved_file.png pip install fire.png pip install questionary.png
+   51  git add README.md app.py khaing_loan.csv
+   52  git add loan_qualifier_app.png Qualifying_loans_non_saved_file.png Qualifying_loans_saved_file.png pip install fire.png pip install questionary.png
+   53  git add loan_qualifier_app.png
+   54  git add Qualifying_loans_non_saved_file.png
+   55  git add Qualifying_loans_not_saved_file.png
+   56  git status
+   57  git add Khaing_loan.csv loan_qualifier_app.png Qualifying_loans_non_saved_file.png Qualifying_loans_saved_file.png pip install fire.png pip install questionary.png
+   58  git status
+   59  git add Khaing_loan.csv
+   60  pwd
+   61  git status
+   62  git add loan_qualifier_app.png Qualifying_loans_non_saved_file.png Qualifying_loans_saved_file.png pip install fire.png pip install questionary.png find_qualifying_info.png get_applicant_info.png
+   63  git add Loan_qualifier_app.png
+   64  pwd
+   65  git status
+   66  git add image_screenshots/
+   67  git commit -m
+   68  git commit -m "Updated the message"
+   69  git push
+   70  pwd
+   71  git status
+   72  git rm Loan_qualifier_app.png
+   73  git commit -m " remove png"
+   74  git push
+   75  git status
+   76  git add README.md
+   77  git commit -m " update README.md"
+   78  git push
+   79  git status
+   80  git add README.md
+   81  git commit -m "update again README.md"
+   82  git push
+   83  history
+   84  history 50 > terminal_history.txt
