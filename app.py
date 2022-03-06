@@ -6,10 +6,9 @@ This is a command line application to match applicants with qualifying loans.
 Example:
     $ python app.py
 """
-from ast import Or
+
 import csv
 import sys
-from tkinter import Y
 import fire
 import questionary
 from pathlib import Path
@@ -112,7 +111,7 @@ def save_csv(csvpath, qualifying_loans):
         csvpath (Path): The csv file path.
     """
 
-    # Set the output header
+    """Set the output header"""
     header = ["Lender","Max Loan Amount","Max LTV","Max DTI","Min Credit Score","Interest Rate"]
 
     with open(csvpath, "w", newline="") as csvfile:
@@ -127,21 +126,21 @@ def save_csv(csvpath, qualifying_loans):
       
 
 def save_qualifying_loans(qualifying_loans):
-    """Saves the qualifying loans to a CSV file.
+
+    """Save the qualifying loans to a CSV file.
 
     Args:
         qualifying_loans (list of lists): The qualifying bank loans.
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
-
     """Prompts dialog to ask the user's about to save their qualifying loans."""
-    
+
     answer = questionary.confirm("Would you like to save your qualifying loans?").ask()
 
     """Prompts dialog to ask the user's file name."""
    
-    """find this file is include .csv then don't save/print .csv in file name,
+    """Find if this file is included .csv , if this is included don't save/print .csv in file name,
 
     otherwise save/print .csv in file name."""
 
@@ -168,7 +167,7 @@ def run():
     # Load the latest Bank data
     bank_data = load_bank_data()
 
-    # Get the applicant's information
+    # Get the applicant's informationh
     credit_score, debt, income, loan_amount, home_value = get_applicant_info()
 
     # Find qualifying loans
