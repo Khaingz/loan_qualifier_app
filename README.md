@@ -24,9 +24,11 @@ Before running the application first install the following dependencies.
   pip install fire
   pip install questionary
 ```
-https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/pip_install_fire.png
+![alt text](https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/pip_install_fire.png)
 
-https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/pip_install_questionary.png?raw=true
+![alt text](https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/pip_install_questionary.png)
+
+
 ---
 
 ## Usage
@@ -41,26 +43,26 @@ python app.py
 
 Upon launching the loan qualifier application you will be greeted with the following prompts.
 
-
 * Define the new `get_applicant_info()` function.
 * Prompt dialog to get the applicant's financial information.
 * Inside `get_applicant_info()`, set the `credit_score` variable using the Questionary `text()` syntax. Repeat this step for the `debt`, `income`, `loan_amount`, and `home_value` variables.
 * Right now, all values received through Questionary will be set to the type `string`, but the values must be set to `float` to perform floating-point arithmetic. So convert the credit score to `integer` and the rest of the values to `float`
 * Inside the `get_applicant_info()` function, write the statement that will return all of the variables.
 
-https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/get_applicant_info.png
+![alt text](https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/get_applicant_info.png)
 
 * Find qualifying loans, determine which loans the user are qualifies for.
 * Calculate the monthly debt ratio, loan to value ration.
-* Filter max loan size, credit score, debt to income and loan to value (Use for loop and if statement). 
+* Filter max loan size, credit score, debt to income and loan to value.
+* Use for loop and if statement function.
 
-https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/find_qualifying_loans.png
+![alt text](https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/find_qualifying_loans.png)
 
 * Save csv file from the file path from path provided.
 * Set the header and create a csvwriter using csv libray.
 * Use the csv library and 'csv.writer' to wire the header row and qualifiying loans.
 
-https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/save_csv_file_path.png
+![alt text](https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/save_csv_file_path.png)
 
 * Save qualifying loans to a csv file.
 * Prompt dialog to ask user's about to save their qualifying loans.
@@ -70,27 +72,29 @@ https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/save_c
 * Use if else statement and find function to save csv file name.
 * print the message to confrim the user's requirement.
 
-https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/save_qualifying_loans.png
+![alt text](https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/save_qualifying_loans.png)
 
 * Running the script to the main function. 
 
-https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/main_function_for_running_the_script.png
+![alt text](https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/main_function_for_running_the_script.png)
 
 * Screenshots image: Testing user's loan_qualifier_app (Zillow_loan.csv)
 
-https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/Loan_qualifier_app.png
+![alt text](https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/Loan_qualifier_app.png)
 
-https://github.com/Khaingz/loan_qualifier_app/blob/main/Zillow_loan.csv
+![alt text](https://github.com/Khaingz/loan_qualifier_app/blob/main/Zillow_loan.csv)
 
 * Screenshots image: Testing user's qualifying loans saved file and file name. (Khaing_loans.csv)
 
-https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/Qualifying_loans_saved_file.png
+![alt text](https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/Qualifying_loans_saved_file.png)
 
-https://github.com/Khaingz/loan_qualifier_app/blob/main/Khaing_loan.csv
+![alt text](https://github.com/Khaingz/loan_qualifier_app/blob/main/Khaing_loan.csv)
 
 * Screenshots image: Testing user's qualifying loans un-saved file.
 
-https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/Qualifying_loans_non_saved_file.png
+![alt text](https://github.com/Khaingz/loan_qualifier_app/blob/main/image_screenshots/Qualifying_loans_non_saved_file.png)
+
+
 ---
 
 ## Contributors
